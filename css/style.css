@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,28 +7,8 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
+    font-family: 'Inter', 'IBM Plex Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #f8f9fa;
-    color: #212529;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-    padding: 2rem 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 1rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: #0d6efd;
-    font-weight: bold;
+    color: #2b2d42;
+    line-height: 1.6;
 }
