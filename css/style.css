@@ -12,3 +12,94 @@ body {
     color: #2b2d42;
     line-height: 1.6;
 }
+
+header {
+    background-color: #ffffff;
+    padding: 40px 32px 24px 32px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    border-left: 6px solid #1a1a1a;
+}
+
+header p {
+    color: #555555;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding-left: 1.3rem;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #243486;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    border-left: 4px solid #2b2d42;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top {
+    object-fit: cover; 
+    height: 200px; 
+}
+
+footer {
+    background-color: #2b2d42;
+    color: #e9ecef;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 10px 8px;
+    font-family: 'Inter', 'IBM Plex Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.footer-link {
+    color: #8da9c4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
