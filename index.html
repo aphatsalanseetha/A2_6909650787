@@ -11,15 +11,27 @@
 </head>
 
 <body>
+    <div class="container mt-5">
+        <!-- header section with navbar -->
+        <header class="mb-5">
+            <div class="row align-items-center">
+                <!-- header -->
+                <div class="col-md-8">
+                    <h1 class="display-6 fw-bold mb-1">My Learning Portfolio</h1>
+                    <p class="text-muted mb-0">CS100 Individual Responsive Learning Portfolio (A2)</p>
+                </div>
 
-    <!-- header -->
-    <header class="mb-5">
-        <h1 class="display-6 fw-bold">My Learning Portfolio</h1>
-        <p class="text-muted">CS100 Individual Responsive Learning Portfolio (A2)</p>
-    </header>
+                <!-- little nav bar -->
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <nav class="d-inline-flex gap-2">
+                        <a href="#about" class="btn btn-sm btn-outline-secondary font-monospace">About</a>
+                        <a href="#portfolio" class="btn btn-sm btn-outline-secondary font-monospace">Portfolio</a>
+                    </nav>
+                </div>
+        </header>
 
-    <!-- about me section -->
-        <section class="mb-5">
+        <!-- about me section -->
+        <section id="about" class="mb-5">
             <h2>About Me</h2>
             <div class="section-card">
                 <div class="row align-items-center">
@@ -28,19 +40,119 @@
                         <p><strong>Student ID:</strong> 6909650787</p>
                         <p><strong>Major:</strong> Computer Science, Faculty of Science</p>
                         <p class="mt-2">
-                            I am a first-year student. I am interested in web development and programming. I am learning software development in the CS100 class, and I am practicing Responsive Web Design and Git/GitHub too!
+                            I am a first-year student. I am interested in web development and programming. I am learning
+                            software development in the CS100 class, and I am practicing Responsive Web Design and
+                            Git/GitHub too!
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-    <!-- my portfolio section -->
-        <section class="mb-5">
+        <!-- my portfolio section -->
+        <section id="portfolio" class="mb-5">
             <h2>My Portfolio</h2>
-    
+
+            <!-- portfolio item 1: cs100 assignment 1 -->
+            <div class="section-card mb-4">
+                <span class="badge bg-dark mb-2">Course Assignment</span>
+                <h3 class="h4">CS100 A1: My First Learning Portfolio</h3>
+                <p class="text-muted small"><strong>Date:</strong> 30 Aug 2026 | <strong>Role:</strong> Individual
+                    Developer
+                </p>
+
+                <p><strong>Description:</strong> I am building a simple one-page Learning Portfolio website using HTML
+                    and
+                    CSS to practice basic Semantic HTML and web page styling. </p>
+
+                <p><strong>Skills:</strong> HTML, CSS, Semantic HTML</p>
+
+                <div class="mt-3">
+                    <h5 class="h6 text-uppercase fw-bold text-dark">Reflection</h5>
+                    <ul class="reflection-list">
+                        <li><strong>What I did:</strong>I am creating a personal portfolio home page with HTML and CSS,
+                            learning the difference between Client and Server, and practicing coding tools while
+                            reviewing
+                            my lessons. </li>
+                        <li><strong>What I learned:</strong>I understand how browsers read and render HTML and CSS to
+                            display web pages, and I know how to organize project files.</li>
+                        <li><strong>Challenge:</strong> To fix problems with remembering HTML tag hierarchies, setting
+                            correct CSS file paths, and recalling basic syntax, I review the lecture slides and practice
+                            along. </li>
+                        <li><strong>Next step:</strong> I want to make my website responsive for all screen sizes, add
+                            fun
+                            interactive features to make it more engaging, and build my web development skills and core
+                            foundations with confidence.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <strong>Evidence:</strong>
+                    <a href="https://courses.cs.tu.ac.th/pluginfile.php/56693/assignsubmission_file/submission_files/148821/A1_6909650787.zip?forcedownload=1"
+                        target="_blank"> Submitted Assignment 1</a>
+                </div>
+            </div>
+
+            <!-- portfolio Item 2: self-learning / lab at home -->
+            <div class="section-card">
+                <span class="badge bg-dark mb-2">Self-learning</span>
+                <h3 class="h4">Self-paced Git & Coding Lab at Home</h3>
+                <p class="text-muted small"><strong>Date:</strong> 27 Sep 2026 | <strong>Role:</strong> Self-Learner /
+                    Developer</p>
+
+                <p><strong>Description:</strong> I studied and practiced using Git and basic commands by myself at home.
+                    I
+                    created a test repository, tried out the branching system, and simulated code fixes to get ready for
+                    real software development.</p>
+                <p><strong>Skills:</strong> Git, GitHub, Version Control</p>
+
+                <div class="mt-3">
+                    <h5 class="h6 text-uppercase fw-bold text-dark">Reflection</h5>
+                    <ul class="reflection-list reflection-left">
+                        <li><strong>What I did:</strong> Practiced basic Git commands by myself at home and simulated
+                            step-by-step code commits.</li>
+                        <li><strong>What I learned:</strong>Understood the Version Control workflow and how to manage
+                            code
+                            change history better.</li>
+                        <li><strong>Challenge:</strong> At first, I was confused about linking the repository to my
+                            local
+                            machine. I fixed it by reviewing the command guide line by line and practicing until I got
+                            comfortable.</li>
+                        <li><strong>Next step:</strong> I want to explore advanced Git features, such as branching and
+                            resolving conflicts when working with others.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <strong>Evidence:</strong>
+                    <div class="mt-2 container text-center">
+                        <!-- screenshot -->
+                        <a href="media/git-lab.jpg" target="_blank">
+                            <img src="media/git-lab.jpg" alt="Git Lab Screenshot" class="img-fluid border rounded"
+                                style="max-height: 200px;">
+                        </a>
+                        <p class="text-muted small mt-1"><em>Click the image to view the full-size screenshot</em></p>
+                    </div>
+                </div>
+            </div> <!-- ปิด section-card ของ item 2 -->
+        </section> <!-- ปิด section id="portfolio" -->
+    </div> <!-- ปิด container -->
 
     <!--js bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>
+    </html>
+    <!--js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <footer class="text-center py-4 mt-5 border-top text-muted small font-monospace">
+        <p>CS100 Individual Responsive Learning Portfolio (A2)</p>
+        <p>
+        <a href="https://github.com/aphatsalanseetha/A2_6909650787.git" target="_blank"> :GitHub Repository</a>
+        </p> 
+    </footer>
+
+
+    </body>
+
+    </html>
