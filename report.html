@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS100 A2 - Report and Reflection</title>
+    <!-- bootstrap, css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Prompt -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+        }
+        .report-card {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #16335f;
+        }
+    </style>
+</head>
+
+<body class="py-5">
+    <div class="container">
+
+        <!-- header -->
+        <header class="text-center mb-5">
+            <h1 class="h3 fw-bold">CS100 Individual Responsive Learning Portfolio (A2)</h1>
+            <p class="text-muted">Technical Documentation & Reflection Report</p>
+            <hr>
+        </header>
+
+        <!-- student Info -->
+        <section class="report-card">
+            <h2 class="h5 text-uppercase text-dark mb-3 fw-bold">Student Information</h2>
+            <p class="mb-1"><strong>Name:</strong> Aphatsalan Seetha</p>
+            <p class="mb-1"><strong>Student ID:</strong> 6909650787</p>
+            <p class="mb-0"><strong>Major:</strong> Computer Science, Faculty of Science</p>
+        </section>
+
+        <!-- question 1 -->
+        <section class="report-card">
+            <h2 class="h5 text-uppercase text-dark mb-3 fw-bold">1. Web Architecture & Workflow Explanation</h2>
+            <p><strong>Question:</strong> อธิบายบทบาทของ Browser, GitHub Pages, HTML/CSS/Bootstrap และ HTTP ตั้งแต่ผู้ใช้เปิด URL จนกระทั่งเห็นหน้าเว็บไซต์ พร้อมลำดับขั้นตอนการทำงาน</p>
+            <p><strong>Answer:</strong></p>
+            <ul>
+                <li><strong>Browser:</strong> ทำหน้าที่รับ URL จากผู้ใช้งาน ส่งคำขอไปยังเซิร์ฟเวอร์ และประมวลผลเรนเดอร์โค้ด HTML/CSS/Bootstrap ออกมาเป็นหน้าเว็บไซต์ให้ผู้ใช้มองเห็น</li>
+                <li><strong>GitHub Pages:</strong> ทำหน้าที่เป็น Web Server จัดเก็บไฟล์โปรเจกต์ทั้งหมด (เช่น <code>index.html</code>, <code>style.css</code>, โฟลเดอร์มีเดีย) และให้บริการส่งมอบไฟล์ผ่านระบบออนไลน์</li>
+                <li><strong>HTML / CSS / Bootstrap:</strong> HTML ใช้สร้างโครงสร้างเนื้อหาหลัก, CSS ตกแต่งสไตล์และสีสัน, และ Bootstrap (ผ่าน CDN) ช่วยจัดการระบบ Grid และ Responsive Layout ให้แสดงผลสวยงามทุกหน้าจอ</li>
+                <li><strong>HTTP:</strong> โปรโตคอลสื่อสารข้อมูลผ่านเครือข่ายอินเทอร์เน็ต ใช้รับส่งข้อมูลระหว่าง Browser (Client) กับ GitHub Pages (Server)</li>
+            </ul>
+            <p class="mt-3"><strong>ลำดับขั้นตอนการทำงาน:</strong></p>
+            <ol>
+                <li>ผู้ใช้พิมพ์ URL ของเว็บไซต์บน Browser</li>
+                <li>Browser ส่งคำขอ (HTTP Request) ผ่านเครือข่ายไปยัง GitHub Pages Server</li>
+                <li>Server ค้นหาและส่งไฟล์โปรเจกต์ (HTML, CSS, รูปภาพ) กลับมายัง Browser (HTTP Response)</li>
+                <li>Browser ทำการดาวน์โหลดและแปลความหมายโค้ด แล้วเรนเดอร์ออกมาเป็นหน้าเว็บ portfolio ให้ผู้ใช้ใช้งาน</li>
+            </ol>
+        </section>
+
+        <!-- question 2 -->
+        <section class="report-card">
+            <h2 class="h5 text-uppercase text-dark mb-3 fw-bold">2. Search & Generative AI Reflection</h2>
+            <p><strong>Question:</strong> กรณีศึกษาการใช้ Search หรือ Generative AI ช่วยพัฒนา A2 (ใช้แก้ปัญหาอะไร, AI เสนออะไร, ตรวจสอบอย่างไร, ตัดสินใจใช้อย่างไร)</p>
+            <p><strong>Answer:</strong></p>
+            <ul>
+                <li><strong>ใช้เพื่อแก้ปัญหาอะไร:</strong> ต้องการจัดหน้า Navbar ให้อยู่แถวเดียวกับหัวข้อหลักแบบกะทัดรัด (ชิดขวาบนจอคอมพิวเตอร์) โดยไม่ให้แถบเมนูลากยาวเต็มหน้าจอ</li>
+                <li><strong>AI หรือแหล่งข้อมูลเสนออะไร:</strong> AI แนะนำให้ใช้ Bootstrap Grid System แบ่งคอลัมน์ด้วย <code>row</code> และ <code>col-md-8</code> กับ <code>col-md-4</code> พร้อมใช้คลาสจัดตำแหน่ง <code>text-md-end</code> และโครงสร้างปุ่มแบบ <code>d-inline-flex gap-2</code></li>
+                <li><strong>นักศึกษาตรวจสอบข้อเสนอนั้นอย่างไร:</strong> ลองปรับใช้โค้ดนั้นในไฟล์ <code>index.html</code> ของตัวเอง แล้วเปิดพรีวิวดูผลลัพธ์ผ่านเบราว์เซอร์ รวมถึงลองย่อ-ขยายหน้าจอเพื่อตรวจสอบ Responsive ของผลลัพธ์</li>
+                <li><strong>ตัดสินใจใช้อย่างไร:</strong> นำโครงสร้าง Grid และคลาสจัดตำแหน่งมาใช้จริงเพราะช่วยแก้ปัญหาได้ตรงจุด แต่ปรับแต่งสีปุ่มและเอฟเฟกต์ Hover เพิ่มเติมเองในไฟล์ <code>style.css</code> เพื่อให้คุมโทนสีเข้ากับธีมหลักของพอร์ตเดิมที่เคยส่งไปในงานแรก</li>
+            </ul>
+        </section>
+
+        <!-- question 3 -->
+        <section class="report-card">
+            <h2 class="h5 text-uppercase text-dark mb-3 fw-bold">3. Project A2 Links</h2>
+            <p><strong>GitHub Repository URL:</strong><br>
+                <a href="https://github.com/aphatsalanseetha/A2_6909650787.git" target="_blank">Click Here</a>
+            </p>
+            <p class="mb-0"><strong>GitHub Pages URL (Deployed Website):</strong><br>
+                <a href="https://aphatsalanseetha.github.io/A2_6909650787/" target="_blank">Click Here</a>
+            </p>
+        </section>
+
+    </div>
+</body>
+
+</html>
